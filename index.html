@@ -1,64 +1,73 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>操盘者档案馆 Operator Archive</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-    h1, h2 { color: #2c3e50; }
-    .section { margin-bottom: 30px; }
-    .bilingual { display: flex; gap: 20px; }
-    .column { flex: 1; }
-    ul { padding-left: 20px; }
-    a { color: #2980b9; text-decoration: none; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #121212; color: #f4f4f4; }
+    header { background: #1e1e1e; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 1.5em; color: #f9d342; }
+    nav a { color: #f4f4f4; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    .hero { text-align: center; padding: 60px 20px; }
+    .hero img { width: 120px; height: 120px; border-radius: 50%; border: 2px solid #f9d342; margin-bottom: 20px; }
+    .hero h2 { margin-top: 0; color: #f9d342; }
+    .intro { max-width: 700px; margin: 0 auto; font-size: 1.1em; line-height: 1.8; margin-top: 20px; }
+    .section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+    .section h3 { color: #f9d342; border-bottom: 1px solid #444; padding-bottom: 8px; }
+    .section ul { list-style: square; padding-left: 20px; }
+    .section a.button { display: inline-block; margin-top: 15px; background: #f9d342; color: #121212; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { text-align: center; padding: 30px 0; font-size: 0.9em; color: #888; background: #1e1e1e; margin-top: 60px; }
+    .version { color: #555; font-size: 0.8em; text-align: center; padding-top: 10px; }
   </style>
 </head>
 <body>
-  <h1>操盘者档案馆 / Operator Archive</h1>
 
-  <div class="section bilingual">
-    <div class="column">
-      <h2>关于我</h2>
-      <p>我是一名具有教育背景的数据分析师，正在通过Python、SQL、Tableau等工具构建全球操盘者的表达与影响力系统。</p>
-    </div>
-    <div class="column">
-      <h2>About Me</h2>
-      <p>I'm a data analyst with a background in education, building a global expression and influence system using Python, SQL, and Tableau.</p>
-    </div>
-  </div>
+<header>
+  <h1>操盘者档案馆</h1>
+  <nav>
+    <a href="#about">关于我</a>
+    <a href="#skills">技能</a>
+    <a href="#resume">简历</a>
+    <a href="#contact">联系</a>
+  </nav>
+</header>
 
-  <div class="section">
-    <h2>技能 Skills</h2>
-    <ul>
-      <li>Python / SQL / Excel</li>
-      <li>Tableau / Data Visualization</li>
-      <li>Data Cleaning & Storytelling</li>
-      <li>Multilingual Communication (EN/中文)</li>
-    </ul>
+<section class="hero">
+  <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="头像">
+  <h2>ybw / Global Operator in Training</h2>
+  <div class="intro">
+    <p>我是一名23岁的中国地理临聘教师，正在从体制边缘迈向全球表达系统构建者。</p>
+    <p>I’m a 23-year-old geography teacher from China, building my way from the edge of the system into a global expression operator.</p>
   </div>
+</section>
 
-  <div class="section">
-    <h2>项目 Projects</h2>
-    <ul>
-      <li><strong>学生成绩分析仪表盘</strong> - 基于Excel和Tableau的数据可视化项目</li>
-      <li><strong>Student Performance Dashboard</strong> - Visualized using Excel and Tableau</li>
-    </ul>
-  </div>
+<section class="section" id="skills">
+  <h3>技能 / Skills</h3>
+  <ul>
+    <li>数据分析：Python, SQL, Tableau, Excel</li>
+    <li>网站搭建：GitHub Pages, Notion风格页面, Markdown表达</li>
+    <li>系统表达：中英双语写作、简历构建、全球发布结构意识</li>
+  </ul>
+</section>
 
-  <div class="section">
-    <h2>社交链接 Social Links</h2>
-    <ul>
-      <li><a href="https://linkedin.com/in/yourname">LinkedIn</a></li>
-      <li><a href="https://github.com/yourname">GitHub</a></li>
-      <li><a href="mailto:you@example.com">Email Me</a></li>
-    </ul>
-  </div>
+<section class="section" id="resume">
+  <h3>简历 / Resume</h3>
+  <a class="button" href="resume.pdf" target="_blank">📄 下载我的简历（PDF）</a>
+</section>
 
-  <div class="section">
-    <h2>联系我 Contact</h2>
-    <p>Email: you@example.com<br>WeChat / Telegram: @yourhandle</p>
-  </div>
+<section class="section" id="contact">
+  <h3>联系我 / Contact</h3>
+  <p>Email: you@example.com</p>
+  <p>GitHub: <a href="https://github.com/ybw2002" style="color:#f9d342;">ybw2002</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourname" style="color:#f9d342;">yourname</a></p>
+</section>
+
+<footer>
+  © 2025 ybw Operator Archive | Powered by GitHub Pages
+  <div class="version">版本号：v0.2 黑金主页（如显示异常，请刷新 Ctrl+F5）</div>
+</footer>
+
 </body>
 </html>
